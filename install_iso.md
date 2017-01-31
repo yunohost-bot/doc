@@ -18,15 +18,10 @@ You can use any computer with **256MB RAM or more**.
 * A **USB stick** of at least 1GB capacity **OR** a standard **blank CD**
 * One of the latest **YunoHost ISO images**, available here (take the 32 Bits one if you don't know which one to choose):
    <div>
-   <b>Torrent:</b>
-   <ul>
-   <li>[32 bits](http://build.yunohost.org/yunohostv2-latest-i386.iso.torrent)</li>
-   <li>[64 bits](http://build.yunohost.org/yunohostv2-latest-amd64.iso.torrent)</li>
-   </ul>
    <b>Direct download:</b>
    <ul>
-   <li>[32 bits](http://build.yunohost.org/yunohostv2-latest-i386.iso)</li>
-   <li>[64 bits](http://build.yunohost.org/yunohostv2-latest-amd64.iso)</li>
+   <li>[i386](https://build.yunohost.org/yunohost-jessie-0127171609-i386-stable.iso)</li>
+   <li>[amd64](https://build.yunohost.org/yunohost-jessie-0127171259-amd64-stable.iso)</li>
    </ul>
    </div>
 
