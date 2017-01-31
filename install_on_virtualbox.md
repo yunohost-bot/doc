@@ -8,8 +8,7 @@
 
 * A x86 computer with VirtualBox installed and enough RAM capacity to be able to run a small virtual machine.
 * The latest **YunoHost ISO image**, available here:
-  * **Torrent** ([i386](http://build.yunohost.org/yunohostv2-latest-i386.iso.torrent), [amd64](http://build.yunohost.org/yunohostv2-latest-amd64.iso.torrent)): share at least to ratio 1 to assure the torrent's sustainability
-  * **Direct download** ([i386](http://build.yunohost.org/yunohostv2-latest-i386.iso), [amd64](http://build.yunohost.org/yunohostv2-latest-amd64.iso))
+  * **Direct download** ([i386](https://build.yunohost.org/yunohost-jessie-0127171609-i386-stable.iso), [amd64](https://build.yunohost.org/yunohost-jessie-0127171259-amd64-stable.iso))
 
 
 ---
