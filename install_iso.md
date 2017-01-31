@@ -8,8 +8,6 @@
 <img src="/images/desktop.jpg">
 <img src="/images/nettop.jpg">
 
-<div class="alert alert-danger">These images are based on **Debian Wheezy**. Wheezy **won't be maintained** with YunoHost 2.4.<br />
-It is **strongly recommended** to install YunoHost on **Debian Jessie** with the **[install script](/install_on_debian_en)**.</div>
 
 * A x86-compatible hardware dedicated to YunoHost: laptop, nettop, netbook, desktop.    
 You can use any computer with **256MB RAM or more**.
