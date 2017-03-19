@@ -42,6 +42,6 @@ chmod 755 $finalpath
 chmod 640 $finalpath/key.pem $finalpath/crt.pem
 chmod 600 $finalpath/openssl.cnf
 
-# Autoriser metronome à accéder aux certificats
-chown root:metronome $finalpath/key.pem $finalpath/crt.pem
+# Autoriser Prosody à accéder aux certificats
+chown root:prosody $finalpath/key.pem $finalpath/crt.pem
 ```

@@ -107,7 +107,7 @@ Certificates and private key look like this :
 At last, secure files of your certificate
 
 ```bash
-sudo chown root:metronome crt.pem key.pem
+sudo chown root:prosody crt.pem key.pem
 sudo chmod 640 crt.pem key.pem
 sudo chown root:root -R ae_certs
 sudo chmod 600 -R ae_certs```

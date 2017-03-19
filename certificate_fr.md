@@ -109,7 +109,7 @@ Les certificats et la clé privée doivent ressembler à cela :
 Enfin, sécurisez les fichiers de votre certificat.
 
 ```bash
-sudo chown root:metronome crt.pem key.pem
+sudo chown root:prosody crt.pem key.pem
 sudo chmod 640 crt.pem key.pem
 sudo chown root:root -R ae_certs
 sudo chmod 600 -R ae_certs```
