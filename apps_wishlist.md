@@ -27,7 +27,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Commafeed](https://github.com/Athou/commafeed)
 - [Converse.js](https://conversejs.org)
 - [Coquelicot](https://coquelicot.potager.org) – [package](https://github.com/M5oul/coquelicot_ynh)
-- [Cryptpad](https://github.com/xwiki-labs/cryptpad)
 - [Cronkeep](https://github.com/cronkeep/cronkeep)
 - [CronWeb](https://github.com/fisherinnovation/CronWeb)
 - [Croodle](https://github.com/jelhan/croodle) Schedule a date or to do a poll on a general topics, with client-side encryption.
@@ -49,7 +48,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [GetSimple CMS](http://get-simple.info)
 - [Git-annex](http://git-annex.branchable.com)
 - [Gitit](http://gitit.net)
-- [GitLab](http://gitlab.org)
 - [Goaccess](https://goaccess.io) Web log analyser (replaces piwik without js tracking scripts)
 - [Gollum](https://github.com/gollum/gollum)
 - [Goploader](https://github.com/Depado/goploader)
