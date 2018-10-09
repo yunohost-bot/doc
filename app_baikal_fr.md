@@ -9,7 +9,7 @@ Sur le portail SSO, si on clique sur la tuile « Baïkal », on tombe sur une 
 
 https://example.com/baikal/admin
 
-Le nom d’utilisateur à spécifier est « admin » suivi du mot de passe spécifique que vous avez choisi lors de l’installation de Baïkal. Attention, le mot de passe ne doit pas contenir de carractères spéciaux.
+Le nom d’utilisateur à spécifier est « admin » suivi du mot de passe spécifique que vous avez choisi lors de l’installation de Baïkal. Attention, le mot de passe ne doit pas contenir de caractères spéciaux.
 
 ### Exemple de création d'un nouvel utilisateur :
 
