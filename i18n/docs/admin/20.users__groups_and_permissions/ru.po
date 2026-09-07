@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-09-05 21:44+0000\n"
+"PO-Revision-Date: 2026-09-07 18:03+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "20users__groups_and_permissions/ru/>\n"
@@ -348,81 +348,111 @@ msgstr ""
 #, no-wrap
 msgid "Note that you can also allow a single user, by using the specific panel at the bottom of the page.\n"
 msgstr ""
+"Обратите внимание, что вы также можете предоставить доступ отдельному "
+"пользователю, воспользовавшись специальной панелью в нижней части страницы.\n"
 
 #. type: Plain text
 #: docs/admin/20.users/groups_and_permissions.mdx:200
 #, no-wrap
 msgid "To allow a group to access the WordPress admin interface in CLI:\n"
 msgstr ""
+"Чтобы предоставить группе доступ к интерфейсу администрирования WordPress "
+"через CLI:\n"
 
 #. type: Plain text
 #: docs/admin/20.users/groups_and_permissions.mdx:212
 #, no-wrap
 msgid "And now we may see that both the YoloCrew and Alice have access to the WordPress admin interface:\n"
 msgstr ""
+"Теперь мы видим, что и YoloCrew, и Alice имеют доступ к панели "
+"администратора WordPress:\n"
 
 #. type: Plain text
 #: docs/admin/20.users/groups_and_permissions.mdx:224
 #, no-wrap
 msgid "Note that, for example, if we want to restrict permission for email so that only Bob is allowed to email, we should also remove `all_users` from the permission, by deleting it from the `all_users` group panel, or in CLI:\n"
 msgstr ""
+"Обратите внимание: если мы хотим ограничить права на отправку электронной "
+"почты так, чтобы это мог делать только Боб, нам также следует удалить "
+"`all_users` from the из списка разрешений — либо убрав эту запись на панели "
+"группы `all_users`, либо через интерфейс командной строки (CLI):\n"
 
 #. type: Plain text
 #: docs/admin/20.users/groups_and_permissions.mdx:233
 #, no-wrap
 msgid "Note that some permissions may be \"protected\", meaning that you won't be able to add/remove the visitor group to this permission. Generally, this is because it would make no sense (or is a security risk) to do so.\n"
 msgstr ""
+"Обратите внимание, что некоторые права доступа могут быть «защищёнными»: это "
+"означает, что вы не сможете добавить группу посетителей к такому праву или "
+"удалить её из него. Как правило, это связано с тем, что подобные действия "
+"лишены смысла или создают угрозу безопасности.\n"
 
 #. type: Plain text
 #: docs/admin/20.users/groups_and_permissions.mdx:235
 #, no-wrap
 msgid "The webadmin will issue a warning if you set a permission that is superseded by a wider permission.\n"
 msgstr ""
+"Веб-панель администратора выдаст предупреждение, если вы установите "
+"разрешение, которое перекрывается более широким разрешением.\n"
 
 #. type: Title ###
 #: docs/admin/20.users/groups_and_permissions.mdx:238
 #, no-wrap
 msgid "Hide/display specific tiles in the user portal"
-msgstr ""
+msgstr "Скрыть/отобразить определенные плитки на пользовательском портале"
 
 #. type: Plain text
 #: docs/admin/20.users/groups_and_permissions.mdx:241
 #, no-wrap
 msgid "Since YunoHost 4.1, you can choose to hide/display specific tiles in the SSO.\n"
 msgstr ""
+"Начиная с версии YunoHost 4.1, можно скрывать или отображать определённые "
+"плитки в SSO.\n"
 
 #. type: Plain text
 #: docs/admin/20.users/groups_and_permissions.mdx:246
 #, no-wrap
 msgid "In the webadmin, you can do so by going in the corresponding app view, go in `Manage label and tiles` and check/uncheck the option `Display the tile in the user portal` for the corresponding permission.\n"
 msgstr ""
+"В веб-интерфейсе администратора это можно сделать, перейдя к представлению "
+"соответствующего приложения, выбрав пункт «Управление метками и плитками» "
+"(`Manage label and tiles`) и установив или сняв флажок «Отображать плитку на "
+"пользовательском портале» (`Display the tile in the user portal`) для "
+"соответствующего права доступа.\n"
 
 #. type: Plain text
 #: docs/admin/20.users/groups_and_permissions.mdx:251
 #, no-wrap
 msgid "In command line, this may be done with:\n"
-msgstr ""
+msgstr "В командной строке это можно сделать с помощью:\n"
 
 #. type: Title ##
 #: docs/admin/20.users/groups_and_permissions.mdx:260
 #, no-wrap
 msgid "Configuring group aliases"
-msgstr ""
+msgstr "Настройка групповых псевдонимов"
 
 #. type: Plain text
 #: docs/admin/20.users/groups_and_permissions.mdx:263
 #, no-wrap
 msgid "Each group can use mail aliases, but their configuration is only available from the CLI so far. For example, the `admins` group is configured with aliases such as `admins@domain.tld`, `root@domain.tld` ... : mail sent to these addresses will be dispatched to all members of the `admins` group.\n"
 msgstr ""
+"Для каждой группы можно использовать почтовые псевдонимы, однако их "
+"настройка пока доступна только через интерфейс командной строки (CLI). "
+"Например, для группы `admins` настроены такие псевдонимы, как "
+"`admins@domain.tld`, `root@domain.tld` и т. д.: письма, отправленные на эти "
+"адреса, будут пересылаться всем участникам группы `admins`.\n"
 
 #. type: Plain text
 #: docs/admin/20.users/groups_and_permissions.mdx:265
 #, no-wrap
 msgid "The command `yunohost user group info` will list them.\n"
-msgstr ""
+msgstr "Команда `yunohost user group info` выведет их список.\n"
 
 #. type: Plain text
 #: docs/admin/20.users/groups_and_permissions.mdx:280
 #, no-wrap
 msgid "To add a new mail, use the action `add-mailalias` or `remove-mailalias` to delete it.\n"
 msgstr ""
+"Чтобы добавить новое письмо, используйте действие `add-mailalias` или "
+"`remove-mailalias`, чтобы удалить его.\n"

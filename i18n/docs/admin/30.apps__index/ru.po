@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-09-05 21:44+0000\n"
+"PO-Revision-Date: 2026-09-07 18:03+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "30apps__index/ru/>\n"
@@ -366,60 +366,86 @@ msgstr "Вы также можете удалить приложение: `yunoh
 #, no-wrap
 msgid "`<app>` is to be replaced with the app's ID. If this is the first instance of the app, like Nextcloud, the ID is `nextcloud`. If this is the second, then it's `nextcloud__2` and so on. To list all your apps and check their ID, you can run `yunohost app info`.\n"
 msgstr ""
+"`<app>`следует заменить на идентификатор приложения. Если это первый "
+"экземпляр приложения (например, Nextcloud), идентификатор будет иметь вид "
+"`nextcloud`. Если второй — `nextcloud__2` и так далее. Чтобы просмотреть "
+"список всех установленных приложений и узнать их идентификаторы, можно "
+"выполнить команду `yunohost app info`.\n"
 
 #. type: Title ###
 #: docs/admin/30.apps/index.mdx:124
 #, no-wrap
 msgid "Configuration panels"
-msgstr ""
+msgstr "Панели настройки"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:127
 #, no-wrap
 msgid "Some apps include a *configuration panel*, which features actions and settings specific for each app that they usually do not handle themselves. They can also spare you the need for altering configuration files by hand.\n"
 msgstr ""
+"Некоторые приложения оснащены *панелью настройки*, содержащей специфические "
+"для каждого из них действия и параметры, которыми они обычно не управляют "
+"самостоятельно. Кроме того, такие панели избавляют от необходимости вручную "
+"редактировать файлы конфигурации.\n"
 
 #. type: Fenced div block (info)
 #: docs/admin/30.apps/index.mdx:128
 #, no-wrap
 msgid "Configuration panels are *not* meant to tweak every aspects of the apps. You will surely use their own administration panels more often than YunoHost's configuration panels.\n"
 msgstr ""
+"Панели настройки *не* предназначены для тонкой настройки абсолютно всех "
+"аспектов приложений. Безусловно, вам придётся чаще пользоваться собственными "
+"панелями администрирования этих приложений, чем панелями настройки YunoHost."
+"\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:136
 #, no-wrap
 msgid "The configuration panels are accessible in the webadmin in their operations page, trough the <Highlight no_break={true} color='darkblue'><FAIcon icon=\"fa-cogs\"/> Config panel</Highlight> button.\n"
 msgstr ""
+"Панели настройки доступны в веб-интерфейсе администратора на странице "
+"операций — через кнопку <Highlight no_break={true} color='darkblue'><FAIcon "
+"icon=\"fa-cogs\"/> Config panel (Панель настройки)</Highlight>.\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:138
 #, no-wrap
 msgid "<Figure src=\"/img/webadmin/app_config_panel.png\" caption=\"Configuration panel for My Webapp\"/>\n"
 msgstr ""
+"<Figure src=\"/img/webadmin/app_config_panel.png\" caption="
+"\"Панель настройки My Webapp\"/>\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:143
 #, no-wrap
 msgid "From the command line, you can list the configuration panel settings with the following command: `yunohost app config get <app>`\n"
 msgstr ""
+"Из командной строки можно вывести список настроек панели конфигурации с "
+"помощью следующей команды: `yunohost app config get <app>`\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:158
 #, no-wrap
 msgid "To change a setting, either use `yunohost app config set <app>` to get prompted about all the settings, or use `yunohost app config set <app> <key> -v <new_value>` to alter a specific one.\n"
 msgstr ""
+"Чтобы изменить настройку, либо воспользуйтесь командой `yunohost app config "
+"set <app>`, чтобы система предложила изменить все параметры по очереди, либо "
+"используйте `yunohost app config set <app> <key> -v <new_value>` для "
+"изменения конкретного параметра.\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:160
 #, no-wrap
 msgid "The `<key>` is the setting name, for example `main.sftp.with_sftp` from above.\n"
 msgstr ""
+"`<key>` — это имя настройки, например `main.sftp.with_sftp` из примера выше."
+"\n"
 
 #. type: Title ##
 #: docs/admin/30.apps/index.mdx:164
 #, no-wrap
 msgid "Execute commands within the app"
-msgstr ""
+msgstr "Выполнение команд в приложении"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:168
@@ -428,6 +454,10 @@ msgid ""
 "Starting YunoHost v11.1.21.4, if you need to execute commands with the app's binary, or PHP commands, etc., you can execute the command `yunohost app shell <app>`.\n"
 "It will:\n"
 msgstr ""
+"Начиная с версии YunoHost v11.1.21.4, если вам необходимо выполнить команды "
+"с помощью исполняемого файла приложения, команды PHP и т. д., вы можете "
+"выполнить команду `yunohost app shell <app>`.\n"
+"Это приведёт к следующему:\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:173
@@ -438,39 +468,61 @@ msgid ""
 "- preload the environment with variables taken from the app's service, if it exists\n"
 "- override `php`, so that it points to the PHP version used by the app\n"
 msgstr ""
+"- откройте новую оболочку Bash от имени системного пользователя приложения\n"
+"- перейдите в рабочую директорию приложения (например, `/var/www/<app>`)\n"
+"- предварительно загрузите переменные окружения из конфигурации службы "
+"приложения (если она существует)\n"
+"- переопределите команду `php` так, чтобы она указывала на версию PHP, "
+"используемую приложением\n"
 
 #. type: Title ##
 #: docs/admin/30.apps/index.mdx:174
 #, no-wrap
 msgid "Applications packaging"
-msgstr ""
+msgstr "Упаковка приложений"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:177
 #, no-wrap
 msgid "Applications must be packaged manually by application packagers/maintainers. Apps can be integrated with YunoHost to support upgrades, backup/restore and LDAP/SSO integration among other things.\n"
 msgstr ""
+"Пакеты приложений должны создаваться вручную специалистами по их упаковке и "
+"сопровождению. Приложения могут быть интегрированы с YunoHost, что "
+"обеспечивает поддержку таких функций, как обновление, резервное копирование "
+"и восстановление, а также интеграция с LDAP/SSO.\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:179
 #, no-wrap
 msgid "If you want to learn or contribute to app packaging, please check the [contributor documentation](/dev/).\n"
 msgstr ""
+"Если вы хотите научиться упаковывать приложения или внести свой вклад в этот "
+"процесс, пожалуйста, ознакомьтесь с [документацией для участников](/dev/).\n"
 
 #. type: Title ###
 #: docs/admin/30.apps/index.mdx:180
 #, no-wrap
 msgid "Integration and quality levels"
-msgstr ""
+msgstr "Уровни интеграции и качества"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:183
 #, no-wrap
 msgid "Automated tests are being run regularly to test the integration and quality of all apps who were declared to be `working` by packagers. The result is a level between 0 and 8, whose meaning is detailed on [this page](/dev/packaging/test). Some tests results may also be available [on this dashboard](https://apps.yunohost.org/dash).\n"
 msgstr ""
+"Регулярно проводятся автоматические тесты для проверки интеграции и качества "
+"всех приложений, которые были заявлены упаковщиками как «рабочие» (`working`)"
+". Результат представляет собой показатель от 0 до 8; его значение подробно "
+"описано на [этой странице](/dev/packaging/test). Результаты некоторых тестов "
+"также можно посмотреть [на этой информационной панели]"
+"(https://apps.yunohost.org/dash).\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:184
 #, no-wrap
 msgid "By default, only applications of sufficient quality are offered. When the quality of an application drops and until the problem is reolved, the app is hidden from the catalog to prevent its installation and its upgrades are put on hold.\n"
 msgstr ""
+"По умолчанию предлагаются только приложения надлежащего качества. Если "
+"качество приложения снижается, оно скрывается из каталога "
+"(чтобы предотвратить его установку), а выпуск обновлений для него "
+"приостанавливается до тех пор, пока проблема не будет устранена.\n"

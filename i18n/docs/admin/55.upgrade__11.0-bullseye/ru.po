@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-11 01:24+0100\n"
-"PO-Revision-Date: 2026-09-05 21:44+0000\n"
+"PO-Revision-Date: 2026-09-07 18:03+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "55upgrade__110-bullseye/ru/>\n"
@@ -398,6 +398,8 @@ msgstr ""
 #, no-wrap
 msgid "If you have not yet rebooted your server, don't do it (we are looking for a solution). This will avoid you the use of a keyboard and screen.\n"
 msgstr ""
+"Если вы ещё не перезагрузили сервер, не делайте этого (мы ищем решение). Это "
+"избавит вас от необходимости использовать клавиатуру и экран.\n"
 
 #. type: Plain text
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:112
@@ -452,3 +454,5 @@ msgstr ""
 #, no-wrap
 msgid "After that you should be able to restore your apps. Don't forget to force upgrade them if you have 502 errors.\n"
 msgstr ""
+"После этого вы сможете восстановить свои приложения. Не забудьте "
+"принудительно обновить их, если возникают ошибки 502.\n"
