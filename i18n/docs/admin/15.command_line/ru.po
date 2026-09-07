@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: 2026-09-05 21:44+0000\n"
+"PO-Revision-Date: 2026-09-07 18:03+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "15command_line/ru/>\n"
@@ -365,57 +365,73 @@ msgstr ""
 #, no-wrap
 msgid "will successively list all the categories available, then the actions available in the `user` category, then the usage of the action `user create`. You might notice that the YunoHost command tree is built with a structure similar to the YunoHost admin pages.\n"
 msgstr ""
+"будут последовательно перечислены все доступные категории, затем действия, "
+"доступные в категории `user`, и, наконец, способы использования действия `"
+"user create`. Вы можете заметить, что дерево команд YunoHost по своей "
+"структуре напоминает страницы администрирования YunoHost.\n"
 
 #. type: Title ###
 #: docs/admin/15.command_line.mdx:148
 #, no-wrap
 msgid "The `yunopaste` command"
-msgstr ""
+msgstr "Команда `yunopaste`"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:151
 #, no-wrap
 msgid "This command allow you to share with an other person the output of a command.\n"
 msgstr ""
+"Эта команда позволяет поделиться с другим человеком результатом выполнения "
+"команды.\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:153
 #, no-wrap
 msgid "Example:\n"
-msgstr ""
+msgstr "Пример:\n"
 
 #. type: Title ###
 #: docs/admin/15.command_line.mdx:158
 #, no-wrap
 msgid "The `ynh-vpnclient-loadcubefile.sh` command"
-msgstr ""
+msgstr "Команда `ynh-vpnclient-loadcubefile.sh`"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:161
 #, no-wrap
 msgid "This command is only available and relevant in the context of the `VPN Client` application installed. You can use it to load a new .cube in case you can't get to the VPN Client interface to do so.\n"
 msgstr ""
+"Эта команда доступна и актуальна только при наличии установленного "
+"приложения `VPN Client` С её помощью можно загрузить новый файл .cube, если "
+"у вас нет доступа к интерфейсу VPN Client для выполнения этой операции.\n"
 
 #. type: Title ###
 #: docs/admin/15.command_line.mdx:166
 #, no-wrap
 msgid "Some useful commands"
-msgstr ""
+msgstr "Некоторые полезные команды"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:169
 #, no-wrap
 msgid "If your administration web interface indicates that the API is unreachable, try starting `yunohost-api`:\n"
 msgstr ""
+"Если веб-интерфейс администрирования показывает, что API недоступен, "
+"попробуйте запустить `yunohost-api`:\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:175
 #, no-wrap
 msgid "If you can no longer connect with an user member of `admins` group via SSH and via the web interface, the `slapd` service may be down, try restarting it:\n"
 msgstr ""
+"Если вы больше не можете подключиться к пользователю из группы`admins` по "
+"SSH или через веб-интерфейс, возможно, служба `slapd` остановлена; "
+"попробуйте перезапустить её:\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:181
 #, no-wrap
 msgid "If you have manually modified configurations and want to know the changes:\n"
 msgstr ""
+"Если вы вручную изменили конфигурации и хотите узнать, в чём заключаются "
+"изменения:\n"

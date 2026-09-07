@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: 2026-09-05 21:44+0000\n"
+"PO-Revision-Date: 2026-09-07 18:03+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "40backups__index/ru/>\n"
@@ -339,45 +339,71 @@ msgstr ""
 #, no-wrap
 msgid "You can then run `yunohost backup restore <archivename>` (hence without its `.tar` extension) to restore an archive. As for `yunohost backup create`, this will restore everything in the archive by default. If you want to restore only specific items, you can use something like `yunohost backup restore <archivename> --apps wordpress`, which will restore only the WordPress app.\n"
 msgstr ""
+"Затем для восстановления архива можно выполнить команду `yunohost backup "
+"restore <archivename>` (указывая имя без расширения `.tar`). Что касается "
+"команды `yunohost backup create`, то по умолчанию она восстанавливает всё "
+"содержимое архива. Если же вы хотите восстановить только определённые "
+"элементы, можно воспользоваться командой вида `yunohost backup restore "
+"<archivename> --apps wordpress`— она восстановит только приложение WordPress."
+"\n"
 
 #. type: Fenced div block (tip)
 #: docs/admin/40.backups/index.mdx:149
 #, no-wrap
 msgid "In the case of a complete restoration, it is possible to restore instead of launching the initial configuration.\n"
 msgstr ""
+"В случае полного восстановления можно выполнить восстановление вместо "
+"запуска исходной конфигурации.\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:157
 #, no-wrap
 msgid "To restore an app, the domain on which it was installed should already be configured (or you need to restore the corresponding system configuration). You also cannot restore an app that is already installed... which means that to restore an old version of an app, you must first uninstall it.\n"
 msgstr ""
+"Для восстановления приложения домен, на котором оно было установлено, уже "
+"должен быть настроен "
+"(либо необходимо восстановить соответствующую системную конфигурацию). Кроме "
+"того, невозможно восстановить приложение, которое уже установлено, — это "
+"означает, что для восстановления старой версии приложения его сначала нужно "
+"удалить.\n"
 
 #. type: Title ####
 #: docs/admin/40.backups/index.mdx:158
 #, no-wrap
 msgid "Uploading an archive"
-msgstr ""
+msgstr "Выгрузка архива"
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:161
 #, no-wrap
 msgid "In many cases, the archive is not on the server on which you want to restore it. So it has to be uploaded, which depending on its size can take more or less time.\n"
 msgstr ""
+"Зачастую архив находится не на том сервере, на котором вы хотите его "
+"восстановить. Поэтому его необходимо загрузить, что — в зависимости от "
+"размера архива — может занять больше или меньше времени.\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:166
 #, no-wrap
 msgid "Currently, the most accessible solution for uploading backups is to use the FileZilla program as explained in [this page](/admin/tutorials/filezilla).\n"
 msgstr ""
+"На данный момент самым доступным решением для загрузки резервных копий "
+"является использование программы FileZilla, как описано на [этой странице]"
+"(/admin/tutorials/filezilla).\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:168
 #, no-wrap
 msgid "By default, backups are to be placed in `/home/yunohost.backup/archives/`.\n"
 msgstr ""
+"По умолчанию резервные копии размещаются в `/home/yunohost.backup/archives/`."
+"\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:173
 #, no-wrap
 msgid "You can use `scp` (a command built on `ssh`) to copy files between two machines from the CLI. For example, for a Linux terminal:\n"
 msgstr ""
+"Для копирования файлов между двумя машинами из командной строки можно "
+"использовать `scp` (команду, основанную на `ssh`). Например, в терминале "
+"Linux:\n"

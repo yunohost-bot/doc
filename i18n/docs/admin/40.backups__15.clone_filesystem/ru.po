@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-09-05 21:44+0000\n"
+"PO-Revision-Date: 2026-09-07 18:03+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "40backups__15clone_filesystem/ru/>\n"
@@ -345,9 +345,12 @@ msgstr "<TabItem value=\"dd\" label=\"В командной строке с по
 #, no-wrap
 msgid "It is possible to achieve the same thing with `dd` if you are comfortable with the command line:\n"
 msgstr ""
+"Того же самого можно добиться с помощью `dd`, если вы уверенно пользуетесь "
+"командной строкой:\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/15.clone_filesystem.mdx:184
 #, no-wrap
 msgid "(replace `/dev/mmcblk0` with the real name of your SD card or hard drive)\n"
 msgstr ""
+"(замените `/dev/mmcblk0` на реальное имя вашей SD-карты или жесткого диска)\n"

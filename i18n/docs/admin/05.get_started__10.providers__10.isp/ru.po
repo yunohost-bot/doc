@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-05-23 07:43+0000\n"
-"PO-Revision-Date: 2026-09-05 21:44+0000\n"
+"PO-Revision-Date: 2026-09-07 18:03+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__10providers__10isp/ru/>\n"
@@ -515,7 +515,7 @@ msgstr ""
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:162
 #, no-wrap
 msgid "<TabItem value=\"gbr\" label=\"UK\">\n"
-msgstr ""
+msgstr "<TabItem value=\"gbr\" label=\"Великобритания\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:169
@@ -528,18 +528,36 @@ msgid ""
 "| ZEN Internet     | Yes              | -                                                       | Yes                        | Yes      |\n"
 "| PlusNet          | Yes              | No                                                      | Yes, if you raise a ticket | Small one off Charge |\n"
 msgstr ""
+"| Поставщик услуг | Возможность открытия порта 25 | [Hairpinning]"
+"(http://en.wikipedia.org/wiki/Hairpinning) | Настраиваемая обратная DNS-"
+"запись   | Статический IP |\n"
+"| ---------------- | ---------------- | "
+"------------------------------------------------------- | "
+"-------------------------- | -------- |\n"
+"| BT Internet      | Да               | -"
+"                                                       | -"
+"                          | Нет      |\n"
+"| Virgin Media     | -                | -"
+"                                                       | "
+"Нет                        | Нет      |\n"
+"| ZEN Internet     | Да               | -"
+"                                                       | "
+"Да                         | Да       |\n"
+"| PlusNet          | Да               | "
+"Нет                                                     | Да, если вы "
+"создадите заявку. | Небольшой разовый платёж |\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:175
 #, no-wrap
 msgid "<TabItem value=\"northamerica\">\n"
-msgstr ""
+msgstr "<TabItem value=\"northamerica\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:177
 #, no-wrap
 msgid "<TabItem value=\"canada\" label=\"Canada\">\n"
-msgstr ""
+msgstr "<TabItem value=\"canada\" label=\"Канада\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:182
@@ -550,12 +568,24 @@ msgid ""
 "| Telus            | No. Extra charge | -                                                       | -                        | No. Extra charge |\n"
 "| TekSavvy         | Yes              | No                                                      | -                        | No. Extra charge |\n"
 msgstr ""
+"| Поставщик услуг | Возможность открытия порта 25 | [Hairpinning]"
+"(http://en.wikipedia.org/wiki/Hairpinning) | Настраиваемый обратный DNS | "
+"Статический IP         |\n"
+"| ---------------- | ---------------- | "
+"------------------------------------------------------- | "
+"------------------------ | ---------------- |\n"
+"| Telus            | Нет. За дополнительную плату. | -"
+"                                                       | -"
+"                        | Нет. За дополнительную плату. |\n"
+"| TekSavvy         | Да             | "
+"Нет                                                     | -"
+"                        | Нет. За дополнительную плату. |\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:185
 #, no-wrap
 msgid "<TabItem value=\"usa\" label=\"USA\" default>\n"
-msgstr ""
+msgstr "<TabItem value=\"usa\" label=\"США\" default>\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:193
@@ -569,18 +599,39 @@ msgid ""
 "| AT&T              | No. Only for business class customer. | unknown.                                                | unknown.                 | unknown.                           |\n"
 "| Xfinity (Comcast) | No. Only for business class customer. | unknown.                                                | unknown.                 | Yes, as a business class customer  |\n"
 msgstr ""
+"| Поставщик услуг  | Возможность открытия порта 25                      | "
+"[Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Настраиваемый "
+"обратный DNS | Статический IP                           |\n"
+"| ----------------- | ------------------------------------- | "
+"------------------------------------------------------- | "
+"------------------------ | ---------------------------------- |\n"
+"| Cox               | Нет. Только для клиентов бизнес-класса. | "
+"Нет                                                     | "
+"Нет                      | Да, для клиентов бизнес-класса.  |\n"
+"| Charter           | Нет. Только для клиентов бизнес-класса. | "
+"Нет                                                     | "
+"Нет                      | Да, для клиентов бизнес-класса.  |\n"
+"| DSLExtreme        | Да                                    | "
+"Нет                                                     | "
+"Нет                      | Да, за дополнительную плату.                 |\n"
+"| AT&T              | Нет. Только для клиентов бизнес-класса. | "
+"неизвестно.                                                | "
+"неизвестно.                 | неизвестно.                           |\n"
+"| Xfinity (Comcast) | Нет. Только для клиентов бизнес-класса. | "
+"неизвестно.                                                | "
+"неизвестно.                 | Да, для клиентов бизнес-класса. |\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:199
 #, no-wrap
 msgid "<TabItem value=\"southamerica\">\n"
-msgstr ""
+msgstr "<TabItem value=\"southamerica\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:201
 #, no-wrap
 msgid "<TabItem value=\"brazil\" label=\"Brazil\" default>\n"
-msgstr ""
+msgstr "<TabItem value=\"brazil\" label=\"Бразилия\" default>\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:205
@@ -590,9 +641,18 @@ msgid ""
 "| ---------------------- | ------------------- | ------------------------------------------------------- | ------------------------ | -------- |\n"
 "| Global Village Telecom | No. Only for Fix IP | No                                                      | No             | Yes, extra charge. |\n"
 msgstr ""
+"| Поставщик услуг       | Возможность открыть порт 25    | [Hairpinning]"
+"(http://en.wikipedia.org/wiki/Hairpinning) | Настраиваемый обратный DNS | "
+"Статический IP |\n"
+"| ---------------------- | ------------------- | "
+"------------------------------------------------------- | "
+"------------------------ | -------- |\n"
+"| Global Village Telecom | Нет. Только для статического IP-адреса. | "
+"Нет                                                     | Нет            | "
+"Да, за дополнительную плату. |\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:211
 #, no-wrap
 msgid "<TabItem value=\"oceania\">\n"
-msgstr ""
+msgstr "<TabItem value=\"oceania\">\n"

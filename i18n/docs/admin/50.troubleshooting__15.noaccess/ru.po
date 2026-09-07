@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-06-04 14:05+0000\n"
-"PO-Revision-Date: 2026-09-05 21:44+0000\n"
+"PO-Revision-Date: 2026-09-07 18:03+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "50troubleshooting__15noaccess/ru/>\n"
@@ -374,6 +374,9 @@ msgstr ""
 #, no-wrap
 msgid "If yoy are sure of your passord, it may be due to the `slapd` service failing. If that's the case, log into the server by SSH as `root`.\n"
 msgstr ""
+"Если вы уверены в правильности пароля, проблема может быть вызвана сбоем "
+"службы `slapd`. В этом случае войдите на сервер по SSH под пользователем "
+"`root`.\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:100
@@ -382,49 +385,65 @@ msgid ""
 "- If your server is at home, you most likely have access to the local network. From this network, you can follow the [SSH instructions](/admin/command_line)`.\n"
 "- If your server is a VPS, your provider may offer a web console.\n"
 msgstr ""
+"- Если ваш сервер находится дома, у вас, скорее всего, есть доступ к "
+"локальной сети. Находясь в этой сети, вы можете воспользоваться "
+"[инструкциями по SSH](/admin/command_line)`.\n"
+"- Если ваш сервер — это VPS, провайдер может предоставлять веб-консоль.\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:102
 #, no-wrap
 msgid "Once logged in, you have to check the state of the service with `yunohost service status slapd` and/or reset your admin password with `yunohost tools adminpw`.\n"
 msgstr ""
+"После входа в систему необходимо проверить состояние службы с помощью "
+"команды `yunohost service status slapd` и/или сбросить пароль администратора "
+"командой `yunohost tools adminpw`.\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:104
 #, no-wrap
 msgid "If this is still failing, on a VPS you may be able to reboot in rescue mode. Do not hesitate to ask for [help](/community/help)\n"
 msgstr ""
+"Если проблема сохраняется, на VPS можно попробовать перезагрузиться в режиме "
+"восстановления (rescue mode). Не стесняйтесь обращаться за [помощью]"
+"(/community/help)\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:105
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:120
 #, no-wrap
 msgid "To be completed\n"
-msgstr ""
+msgstr "Подлежит заполнению\n"
 
 #. type: Title ##
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:109
 #, no-wrap
 msgid "Your VPN expired or does not connect any more"
-msgstr ""
+msgstr "Срок действия вашего VPN истёк, или он больше не подключается"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:112
 #, no-wrap
 msgid "If you have a VPN with fixed IP, maybe it has expired, or the provider's infrastructure is failing.\n"
 msgstr ""
+"Если вы используете VPN со статическим IP-адресом, возможно, срок его "
+"действия истёк или в инфраструктуре провайдера возникли неполадки.\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:114
 #, no-wrap
 msgid "In that case, contact your VPN provider to renew it and update the parameters of the VPN Client app.\n"
 msgstr ""
+"В этом случае свяжитесь с вашим VPN-провайдером, чтобы продлить услугу и "
+"обновить параметры приложения VPN-клиента.\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:116
 #, no-wrap
 msgid "Meanwhile, try reaching your server if it is at home, by:\n"
 msgstr ""
+"Тем временем попробуйте подключиться к своему серверу "
+"(если он находится дома) следующим образом:\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:119
@@ -433,57 +452,82 @@ msgid ""
 "- its local IP, using one of the method listed [on the corresponding page](/admin/get_started/post_install/find_ip)\n"
 "- reaching it at `yunohost.local`, assuming your client supports the Bonjour protocol (or `yunohost-2.local`, etc. depending on how many YunoHost servers are on your network)\n"
 msgstr ""
+"- его локальный IP-адрес, воспользовавшись одним из методов, описанных "
+"[на соответствующей странице](/admin/get_started/post_install/find_ip)\n"
+"- обратившись к нему по адресу `yunohost.local` (при условии, что ваш клиент "
+"поддерживает протокол Bonjour; или `yunohost-2.local` и т. д. — в "
+"зависимости от количества серверов YunoHost в вашей сети)\n"
 
 #. type: Title ##
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:124
 #, no-wrap
 msgid "Your server does not boot"
-msgstr ""
+msgstr "Ваш сервер не загружается"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:127
 #, no-wrap
 msgid "In some cases your server may be stuck at boot. It may come from a new, buggy, kernel. Try changing to another kernel on the boot screen (via VNC for VPS).\n"
 msgstr ""
+"В некоторых случаях сервер может зависнуть при загрузке. Это может быть "
+"вызвано новым ядром, содержащим ошибки. Попробуйте выбрать другое ядро на "
+"экране загрузки (через VNC для VPS).\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:129
 #, no-wrap
 msgid "If you are in \"rescue\" mode with `grub`, it may be due a misconfiguration of `grub`, or a corrupted drive.\n"
 msgstr ""
+"Если вы оказались в режиме восстановления (\"rescue\" mode) `grub`, это "
+"может быть вызвано неправильной настройкой `grub` или повреждением диска.\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:131
 #, no-wrap
 msgid "In that case, access the storage drive from another system (your provider's \"rescue\" mode, live USB drive, read the SD or drive on another computer) and try to check partitions integrity with `smartctl`, `fsck`, and `mount`.\n"
 msgstr ""
+"В этом случае получите доступ к накопителю из другой системы (например, "
+"через режим восстановления провайдера, с помощью Live USB или подключив SD-"
+"карту либо диск к другому компьютеру) и попробуйте проверить целостность "
+"разделов с помощью утилит `smartctl`, `fsck` и команды `mount`.\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:133
 #, no-wrap
 msgid "If disks are corrupted or hard to mount, you have to save your data and maybe reformat, reinstall, and/or change the drive. If you succeed in mounting the drive, you can use `systemd-nspawn` to access its database.\n"
 msgstr ""
+"Если диски повреждены или их трудно смонтировать, необходимо сохранить "
+"данные и, возможно, переформатировать диск, переустановить систему и/или "
+"заменить сам накопитель. Если диск удалось смонтировать, для доступа к его "
+"базе данных можно воспользоваться утилитой `systemd-nspawn`.\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:135
 #, no-wrap
 msgid "Otherwise, run `grub-update`, `grub-install` again with `chroot` or with `systemd-nspawn`.\n"
 msgstr ""
+"В противном случае снова выполните `grub-update`, `grub-install`, используя "
+"`chroot` или `systemd-nspawn`.\n"
 
 #. type: Title ##
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:136
 #, no-wrap
 msgid "VNC or screen access does not work"
-msgstr ""
+msgstr "VNC или доступ к экрану не работают"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:139
 #, no-wrap
 msgid "It may be due hardware issue on your server, or with the hypervisor if it is on a VPS.\n"
 msgstr ""
+"Причиной может быть аппаратная проблема на сервере или неполадка гипервизора "
+"(если речь идет о VPS).\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:140
 #, no-wrap
 msgid "If you are renting your server, contact the support of your provider. Otherwise, try fixing your machine by replacing failing components.\n"
 msgstr ""
+"Если вы арендуете сервер, обратитесь в службу поддержки вашего провайдера. В "
+"противном случае попробуйте восстановить работоспособность сервера, заменив "
+"неисправные компоненты.\n"

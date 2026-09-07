@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-09-05 21:44+0000\n"
+"PO-Revision-Date: 2026-09-07 18:03+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "45tutorials__25external_storage/ru/>\n"
@@ -385,172 +385,208 @@ msgstr ""
 #: docs/admin/45.tutorials/25.external_storage.mdx:136
 #, no-wrap
 msgid "5.1 Creating subfolders on the disk"
-msgstr ""
+msgstr "5.1 Создание подпапок на диске"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:139
 #, no-wrap
 msgid "To begin with, we create a folder on the hard drive\n"
-msgstr ""
+msgstr "Для начала создадим папку на жёстком диске\n"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/25.external_storage.mdx:145
 #, no-wrap
 msgid "5.2 Switching to maintenance mode"
-msgstr ""
+msgstr "5.2 Переход в режим обслуживания"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:148
 #, no-wrap
 msgid "Then, ideally, we switch to maintenance mode the applications that might be writing data.\n"
 msgstr ""
+"Затем, в идеале, мы переводим в режим обслуживания те приложения, которые "
+"могут записывать данные.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:150
 #, no-wrap
 msgid "Example, for nextcloud:\n"
-msgstr ""
+msgstr "Пример, для nextcloud:\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:156
 #, no-wrap
 msgid "Example, for mail:\n"
-msgstr ""
+msgstr "Пример для почты:\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/45.tutorials/25.external_storage.mdx:162
 #, no-wrap
 msgid "If you wish to move databases such as mariadb (mysql), it is imperative that you stop the services for these databases otherwise it is almost certain that your data will be corrupted.\n"
 msgstr ""
+"Если вы хотите перенести базы данных, такие как MariaDB (MySQL), обязательно "
+"остановите соответствующие службы; в противном случае данные почти наверняка "
+"будут повреждены.\n"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/25.external_storage.mdx:166
 #, no-wrap
 msgid "5.3 Creating the mount points"
-msgstr ""
+msgstr "5.3 Создание точек монтирования"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:169
 #, no-wrap
 msgid "Next, we will rename the original folder and create an empty eponymous folder.\n"
 msgstr ""
+"Затем мы переименуем исходную папку и создадим пустую папку с тем же именем."
+"\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:178
 #, no-wrap
 msgid "We can then use the `mount --bind` command to mount the folder on our hard drive to the new empty location in the tree.\n"
 msgstr ""
+"Затем мы можем использовать команду `mount --bind`, чтобы примонтировать "
+"папку с нашего жесткого диска к новому пустому месту в дереве каталогов.\n"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/25.external_storage.mdx:184
 #, no-wrap
 msgid "5.4 Copying the data"
-msgstr ""
+msgstr "5.4 Копирование данных"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:187
 #, no-wrap
 msgid "Next, we copy the data, keeping all the folder and file properties. This operation can take a little time, with another terminal, you can control the evolution by observing the weight associated with the mount point with `df -h`\n"
 msgstr ""
+"Затем мы копируем данные, сохраняя все свойства папок и файлов. Эта операция "
+"может занять некоторое время; ход процесса можно отслеживать в другом окне "
+"терминала, наблюдая за объёмом данных в точке монтирования с помощью команды "
+"`df -h`\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:194
 #, no-wrap
 msgid "Once this is done, check with `ls` that the contents are there:\n"
-msgstr ""
+msgstr "После этого проверьте с помощью команды `ls`, что файлы на месте:\n"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/25.external_storage.mdx:200
 #, no-wrap
 msgid "5.5 Exiting maintenance mode"
-msgstr ""
+msgstr "5.5 Выход из режима обслуживания"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:203
 #, no-wrap
 msgid "From here you can stop maintenance mode, the command below is to be adapted depending on the services you have stopped.\n"
 msgstr ""
+"Здесь можно отключить режим обслуживания; приведённую ниже команду следует "
+"адаптировать в зависимости от того, какие службы были остановлены.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:211
 #, no-wrap
 msgid "From this point on, your services are running with their data on disk, so it's time to test to see how much of an impact this has on performance (especially if you are using USB 2.0).\n"
 msgstr ""
+"С этого момента ваши службы работают с данными, размещёнными на диске, "
+"поэтому самое время проверить, как это сказывается на производительности "
+"(особенно если вы используете USB 2.0).\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/25.external_storage.mdx:212
 #, no-wrap
 msgid "6. Automatically mount on boot"
-msgstr ""
+msgstr "6. Автомонтирование при загрузке"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:215
 #, no-wrap
 msgid "So far we have manually mounted the disk and subfolders. However, it is necessary to configure the system to automatically mount the disk after a boot.\n"
 msgstr ""
+"До сих пор мы монтировали диск и подпапки вручную. Однако необходимо "
+"настроить систему так, чтобы диск монтировался автоматически после загрузки."
+"\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:217
 #, no-wrap
 msgid "If your tests are successful, you should keep the mount points, otherwise you should hurry up and go back to maintenance first.\n"
 msgstr ""
+"Если тесты пройдут успешно, точки монтирования следует сохранить; в "
+"противном случае нужно поторопиться и сначала вернуться в режим обслуживания."
+"\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:219
 #, no-wrap
 msgid "To begin with, let's find the UUID (universal identifier) of our disk with :\n"
 msgstr ""
+"Для начала найдём UUID (универсальный идентификатор) нашего диска с помощью "
+"команды:\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:225
 #, no-wrap
 msgid "Let's add a line to the `/etc/fstab` file that handles the mounting of disks at boot time. So we open the file with `nano` :\n"
 msgstr ""
+"Добавим в файл `/etc/fstab`, отвечающий за монтирование дисков при загрузке, "
+"новую строку. Для этого откроем файл с помощью `nano`:\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:231
 #, no-wrap
 msgid "Then add these lines to the end of the file:\n"
-msgstr ""
+msgstr "Затем добавьте эти строки в конец файла:\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:239
 #, no-wrap
 msgid "(this line must be adapted according to the previous information and choices)\n"
 msgstr ""
+"(эту строку необходимо адаптировать с учётом предыдущей информации и "
+"сделанного выбора)\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:241
 #, no-wrap
 msgid "Use Ctrl+X then `y` to save.\n"
-msgstr ""
+msgstr "Используйте Ctrl+X, затем `y`, чтобы сохранить.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:243
 #, no-wrap
 msgid "You can then try rebooting the system to check if the disk and subfolders are mounted automatically.\n"
 msgstr ""
+"Затем можно попробовать перезагрузить систему, чтобы проверить, "
+"автоматически ли монтируются диск и подпапки.\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/25.external_storage.mdx:244
 #, no-wrap
 msgid "7. Clean up old data"
-msgstr ""
+msgstr "7. Очистка старых данных"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:247
 #, no-wrap
 msgid "Once your new setup is validated, you can proceed to delete the old data from step 5.3:\n"
 msgstr ""
+"После того как новая конфигурация будет проверена, можно удалить старые "
+"данные с этапа 5.3:\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/25.external_storage.mdx:253
 #, no-wrap
 msgid "🎉 Congratulations!"
-msgstr ""
+msgstr "🎉 Поздравляем!"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:255
 #, no-wrap
 msgid "If you have made it this far without damage, you now have a server that takes advantage of one or more storage disks.\n"
 msgstr ""
+"Если вы дошли до этого этапа без каких-либо повреждений, то теперь у вас "
+"есть сервер, использующий один или несколько дисков для хранения данных.\n"
